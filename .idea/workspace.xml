@@ -83,9 +83,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2470c73d-5f33-409f-b7d7-7307825a50d9" name="Changes" comment="&quot;singup&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2470c73d-5f33-409f-b7d7-7307825a50d9" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -323,7 +321,31 @@
       <option name="project" value="LOCAL" />
       <updated>1725595829692</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update commit">
+      <option name="closed" value="true" />
+      <created>1725638652002</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725638652003</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1725638718084</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725638718084</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1725638800029</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725638800029</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -342,6 +364,8 @@
     <MESSAGE value="&quot;new version&quot;" />
     <MESSAGE value="&quot;Favorite Fragment&quot;" />
     <MESSAGE value="&quot;singup&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;singup&quot;" />
+    <MESSAGE value="update commit" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
