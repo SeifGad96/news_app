@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "61045893516",
+    "project_id": "what-s-the-news-8afc6",
+    "storage_bucket": "what-s-the-news-8afc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61045893516:android:a0bf27972a64731a02cea9",
+        "android_client_info": {
+          "package_name": "com.training.whatsthenews"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwMTqit_zr6X3EgGv8KzF_tNMUbJuiv1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
