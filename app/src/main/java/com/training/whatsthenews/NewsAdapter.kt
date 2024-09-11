@@ -42,7 +42,8 @@ class NewsAdapter(val fragment: Fragment, val articles: ArrayList<Article>) :
 
         val db = Firebase.firestore
         // adding favorites news into fire_store database without duplicating and the name of the document is the title of news
-        holder.binding.favoriteIv.setOnClickListener {
+
+        holder.binding.favFab.setOnClickListener {
             val news = Article(articles[position].title, url, articles[position].urlToImage)
 
             db

@@ -96,6 +96,8 @@ class FavoriteFragment : Fragment() {
         viewModel.loadFavoriteArticles()
 
 
+         
+
         }
 
     // convert the data from List<FavoriteNewsEntity> to List<FavoriteNews> to be sent to the adapter which takes List<FavoriteNews>

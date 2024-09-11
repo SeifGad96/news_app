@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.training.whatsthenews.databinding.FragmentLoginBinding
@@ -43,8 +44,8 @@ class SignupFragment : Fragment() {
         val bounceAnim = AnimationUtils.loadAnimation(context, R.anim.scale)
         val fadeInAnim = AnimationUtils.loadAnimation(context, R.anim.alpha)
 
-        binding.tvWelcome.startAnimation(bounceAnim)
-        binding.buttonSignup.startAnimation(fadeInAnim)
+//        binding.tvWelcome.startAnimation(bounceAnim)
+//        binding.buttonSignup.startAnimation(fadeInAnim)
 
         binding.tvHaveAccount.setOnClickListener {
             findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
@@ -106,22 +107,32 @@ class SignupFragment : Fragment() {
                         Toast.makeText(mContext, "Password not match", Toast.LENGTH_SHORT)
                             .show()
                     }
-                } else {
-                    Toast.makeText(mContext, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT)
-                        .show()
-
                 }
+            }else {
+                Toast.makeText(mContext, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT)
+                    .show()
+
             }
 
         }
 
-        binding.motionLayout.progress = 0f
-        binding.motionLayout.transitionToEnd()
+//        binding.motionLayout.progress = 0f
+//        binding.motionLayout.transitionToEnd()
 
 
 
     }
 
+    override fun onStart() {
+        super.onStart()
+        val navHostFragment =
+            requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        val navController = navHostFragment.navController
+
+        if (firebaseAuth.currentUser != null) {
+            findNavController().navigate(R.id.action_signupFragment_to_homeFragment)
+        }
+    }
 
 
 

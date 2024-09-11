@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/signupFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/signupFragment"
@@ -17,6 +17,9 @@
             app:exitAnim="@anim/exit_anim"
             app:popEnterAnim="@anim/pop_enter_anim"
             app:popExitAnim="@anim/pop_exit_anim" />
+        <action
+            android:id="@+id/action_signupFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -49,6 +52,10 @@
         <action
             android:id="@+id/action_homeFragment_to_setting"
             app:destination="@id/setting" />
+        <action
+            android:id="@+id/action_homeFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment"
@@ -75,4 +82,16 @@
         android:name="com.training.whatsthenews.setting"
         android:label="activity_setting"
         tools:layout="@layout/activity_setting" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.training.whatsthenews.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

@@ -3,9 +3,15 @@ package com.training.whatsthenews
 import retrofit2.Call
 import retrofit2.http.GET
 
+import retrofit2.http.Query
 
 
 interface NewsCallable {
+    @GET("news?apikey=08094a62d7d5454fa4fc051ae47ab52c")
+    fun getNews(
+        @Query("category") category: String,
+        @Query("country") country: String,
+    ): Call<News>
 
 
     //health
@@ -78,3 +84,5 @@ interface NewsCallable {
 
 
 }
+
+/*   */

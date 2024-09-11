@@ -40,13 +40,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/favorite_iv"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/favorite_border"
-            app:layout_constraintBottom_toBottomOf="@id/favorite_view"
-            app:layout_constraintEnd_toEndOf="@id/favorite_view" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fav_fab"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_favorite"
+            android:layout_width="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="@color/white"
+            app:tint="?attr/colorSecondary"
+            android:layout_height="wrap_content"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/share_fab"

@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".setting">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -12,6 +13,7 @@
         android:layout_height="match_parent">
 
         <include layout="@layout/app_bar" />
+
 
         <ImageView
             android:layout_width="match_parent"
@@ -34,6 +36,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <RadioButton
+                android:id="@+id/eg_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Egypt"
@@ -41,6 +44,7 @@
                 android:textStyle="bold" />
 
             <RadioButton
+                android:id="@+id/us_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -49,6 +53,7 @@
                 android:textStyle="bold" />
 
             <RadioButton
+                android:id="@+id/fr_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -57,6 +62,7 @@
                 android:textStyle="bold" />
 
             <RadioButton
+                android:id="@+id/germany_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -65,6 +71,7 @@
                 android:textStyle="bold" />
 
             <RadioButton
+                android:id="@+id/england_rb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -76,11 +83,17 @@
         </RadioGroup>
 
         <Button
+
             android:id="@+id/aplly"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Aplly"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/baby_blue"
+            android:text="Aplay"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

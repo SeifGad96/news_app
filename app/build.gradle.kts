@@ -77,5 +77,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
     implementation ("androidx.room:room-ktx:2.5.0")
 
+    implementation("androidx.core:core-splashscreen:1.0.0")
+
 }
 
