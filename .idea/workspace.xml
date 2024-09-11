@@ -89,12 +89,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2470c73d-5f33-409f-b7d7-7307825a50d9" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/NewsCallable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/NewsCallable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/setting.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/setting.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/SignupFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/SignupFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/SplashFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/training/whatsthenews/SplashFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +104,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Abdo Omar\.android\avd\Android.avd)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\mshah\.android\avd\Pixel_2_API_33.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -174,7 +173,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/SeifGad96/news_app.git",
-    "accountId": "829e81b3-cfb4-40c2-89a8-46c814fff780"
+    "accountId": "ca39cff1-a63d-409b-a6be-fdee48a9234c"
   }
 }]]></component>
   <component name="ProblemsViewState">
@@ -212,7 +211,7 @@
   },
   "keyToStringList": {
     "kotlin-gradle-user-dirs": [
-      "C:\\Users\\Abdo Omar\\.gradle"
+      "C:\\Users\\mshah\\.gradle"
     ]
   }
 }]]></component>

@@ -123,16 +123,16 @@ class SignupFragment : Fragment() {
 
     }
 
-    override fun onStart() {
-        super.onStart()
-        val navHostFragment =
-            requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        val navController = navHostFragment.navController
-
-        if (firebaseAuth.currentUser != null) {
-            findNavController().navigate(R.id.action_signupFragment_to_homeFragment)
-        }
-    }
+//    override fun onStart() {
+//        super.onStart()
+//        val navHostFragment =
+//            requireActivity().supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+//        val navController = navHostFragment.navController
+//
+//        if (firebaseAuth.currentUser != null) {
+//            findNavController().navigate(R.id.action_signupFragment_to_homeFragment)
+//        }
+//    }
 
 
 

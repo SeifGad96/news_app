@@ -21,13 +21,13 @@ class MainActivity : AppCompatActivity() {
         firebaseAuth = FirebaseAuth.getInstance()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        val navHostFragment =
-//            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-//        val navController = navHostFragment.navController
-//
-//        if (firebaseAuth.currentUser != null) {
-//            navController.navigate(R.id.homeFragment)
- //       }
+     val navHostFragment =
+           supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+       val navController = navHostFragment.navController
+
+       if (firebaseAuth.currentUser == null) {
+           navController.navigate(R.id.signupFragment)
+       }
 /*
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
