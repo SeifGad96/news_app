@@ -19,3 +19,17 @@ categories, and managing favorite news articles.
 - **XML**: For building the app’s responsive and modern user interface.
 
 ## Screenshots
+![1](https://github.com/user-attachments/assets/c760c0e9-76de-4881-8e35-0db33b7021dc)
+![2](https://github.com/user-attachments/assets/f32f31cb-bfbd-4613-8a49-70a508bc8289)
+![3](https://github.com/user-attachments/assets/f1da24f0-f156-492b-bccc-719d371e32c7)
+![4](https://github.com/user-attachments/assets/6315538b-04ef-4681-81fc-81f5c1f9dcc2)
+![5](https://github.com/user-attachments/assets/88474fe2-2e61-4b44-95d2-40bec415ca41)
+![6](https://github.com/user-attachments/assets/a07f72df-5de5-4187-a4df-4b1c8053e3f2)
+
+## Team
+
+We are a team of passionate developers who worked together on the What`s Now App.
+- **Dina Kamal** 
+- **Sief Elsayed** 
+- **Adelaziz Omar** 
+- **Eslam Emad** 
