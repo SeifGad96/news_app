@@ -76,6 +76,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_homeFragment_to_signupFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </LayoutPositions>
@@ -117,8 +122,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="153" />
-                            <option name="y" value="-248" />
+                            <option name="x" value="229" />
+                            <option name="y" value="-290" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -135,6 +140,11 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="action_signupFragment_to_homeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_signupFragment_to_loginFragment">
                               <value>
                                 <LayoutPositions />
@@ -153,6 +163,20 @@
                             <option name="x" value="-234" />
                             <option name="y" value="67" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_splashFragment_to_homeFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_splashFragment_to_signupFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

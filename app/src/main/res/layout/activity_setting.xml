@@ -24,7 +24,7 @@
             tools:layout_editor_absoluteY="127dp" />
 
         <RadioGroup
-            android:id="@+id/radiogrouo"
+            android:id="@+id/radiogroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -34,14 +34,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
-            <RadioButton
-                android:id="@+id/eg_rb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Egypt"
-                android:textSize="24dp"
-                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/us_rb"
@@ -83,32 +75,20 @@
         </RadioGroup>
 
         <Button
-
-            android:id="@+id/aplly"
+            android:id="@+id/apply"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="@color/baby_blue"
-            android:text="Aplay"
+            android:text="Apply"
             android:textAllCaps="false"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radiogrouo" />
-
-        <!-- <Button
-             android:id="@+id/back"
-             android:layout_width="0dp"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="30dp"
-             android:text="Back"
-             android:textStyle="bold"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintStart_toEndOf="@+id/aplly"
-             app:layout_constraintTop_toBottomOf="@+id/radiogrouo" />-->
+            app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

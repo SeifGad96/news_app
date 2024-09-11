@@ -118,42 +118,36 @@ class HomeFragment : Fragment() {
 
         viewModel.categoryImageView.observe(viewLifecycleOwner) { it ->
             when (savedCountry) {
-                "eg" ->
-                    when (it) {
-                        R.drawable.tech -> c.getTechnoNewsegypt().enqueue(newsCallback("Technology News:"))
-                        R.drawable.health -> c.getHealthNewsegypt().enqueue(newsCallback("Health News"))
-                        R.drawable.sports -> c.getSportNewsegypt().enqueue(newsCallback("Sports News"))
-                        R.drawable.business -> c.getBusinessNewsegypt().enqueue(newsCallback("Business News"))
-                    }
+
                 "us" ->
                     when (it) {
-                        R.drawable.tech -> c.getTechnoNewsus().enqueue(newsCallback("Technology News:"))
-                        R.drawable.health -> c.getHealthNewsus().enqueue(newsCallback("Health News"))
-                        R.drawable.sports -> c.getSportNewsus().enqueue(newsCallback("Sports News"))
-                        R.drawable.business -> c.getBusinessNewsus().enqueue(newsCallback("Business News"))
+                        R.drawable.tech -> c.getTechnoNewsUs().enqueue(newsCallback("Technology News:"))
+                        R.drawable.health -> c.getHealthNewsUs().enqueue(newsCallback("Health News"))
+                        R.drawable.sports -> c.getSportNewsUs().enqueue(newsCallback("Sports News"))
+                        R.drawable.business -> c.getBusinessNewsUs().enqueue(newsCallback("Business News"))
                     }
                 "fr" ->
                     when (it) {
-                        R.drawable.tech -> c.getTechnoNewsfrance().enqueue(newsCallback("Technology News:"))
-                        R.drawable.health -> c.getHealthNewsfrance().enqueue(newsCallback("Health News"))
-                        R.drawable.sports -> c.getSportNewsfrance().enqueue(newsCallback("Sports News"))
-                        R.drawable.business -> c.getBusinessNewsfrance().enqueue(newsCallback("Business News"))
+                        R.drawable.tech -> c.getTechnoNewsFrance().enqueue(newsCallback("Technology News:"))
+                        R.drawable.health -> c.getHealthNewsFrance().enqueue(newsCallback("Health News"))
+                        R.drawable.sports -> c.getSportNewsFrance().enqueue(newsCallback("Sports News"))
+                        R.drawable.business -> c.getBusinessNewsFrance().enqueue(newsCallback("Business News"))
                     }
                 "de" ->
                     when (it) {
-                        R.drawable.tech -> c.getTechnoNewsjermany().enqueue(newsCallback("Technology News:"))
-                        R.drawable.health -> c.getHealthNewsjermany().enqueue(newsCallback("Health News"))
-                        R.drawable.sports -> c.getSportNewsjermany().enqueue(newsCallback("Sports News"))
-                        R.drawable.business -> c.getBusinessNewsjermany().enqueue(newsCallback("Business News"))
+                        R.drawable.tech -> c.getTechnoNewsGermany().enqueue(newsCallback("Technology News:"))
+                        R.drawable.health -> c.getHealthNewsGermany().enqueue(newsCallback("Health News"))
+                        R.drawable.sports -> c.getSportNewsGermany().enqueue(newsCallback("Sports News"))
+                        R.drawable.business -> c.getBusinessNewsGermany().enqueue(newsCallback("Business News"))
                     }
                 "gb" ->
                     when (it) {
-                        R.drawable.tech -> c.getTechnoNewsengland().enqueue(newsCallback("Technology News:"))
-                        R.drawable.health -> c.getHealthNewsengland().enqueue(newsCallback("Health News"))
-                        R.drawable.sports -> c.getSportNewsengland().enqueue(newsCallback("Sports News"))
-                        R.drawable.business -> c.getBusinessNewsengland().enqueue(newsCallback("Business News"))
+                        R.drawable.tech -> c.getTechnoNewsEngland().enqueue(newsCallback("Technology News:"))
+                        R.drawable.health -> c.getHealthNewsEngland().enqueue(newsCallback("Health News"))
+                        R.drawable.sports -> c.getSportNewsEngland().enqueue(newsCallback("Sports News"))
+                        R.drawable.business -> c.getBusinessNewsEngland().enqueue(newsCallback("Business News"))
                     }
-                else->c.getTechnoNewsengland().enqueue(newsCallback("Technology News:"))
+                else->c.getTechnoNewsEngland().enqueue(newsCallback("Technology News:"))
             }
         }
 
@@ -178,7 +172,6 @@ class HomeFragment : Fragment() {
         }
     }
 
-
     private fun showNews(articles: ArrayList<Article>) {
         val newsAdapter = NewsAdapter(this, articles)
         binding.newsRv.adapter = newsAdapter
@@ -188,7 +181,6 @@ class HomeFragment : Fragment() {
         val categoriesAdapter = CategoriesAdapter(this, categories)
         binding.categoryRv.adapter = categoriesAdapter
     }
-
 
     private fun loadCategories(): List<Category> {
         // Load categories and news
@@ -209,6 +201,12 @@ class HomeFragment : Fragment() {
             categoryList.add(Category(categories[i], categoryNames[i]))
         }
         return categoryList
+    }
+    // to loadNews after the user get back from settings activity without refreshing the news
+    override fun onResume() {
+        super.onResume()
+        binding.progressBar.isVisible= true
+        loadNews()
     }
 
 }
